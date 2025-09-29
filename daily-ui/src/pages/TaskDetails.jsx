@@ -212,4 +212,3 @@ function Info({ label, value }) {
     </div>
   );
 }
-// ui done
