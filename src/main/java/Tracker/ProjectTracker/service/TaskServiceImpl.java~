@@ -1,0 +1,13 @@
+package Tracker.ProjectTracker.service;
+import Tracker.ProjectTracker.entity.Task;
+import Tracker.ProjectTracker.repository.TaskRepository;
+import org.springframework.stereotype.Service;
+import jakarta.persistence.EntityNotFoundException;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+
+@Service
+@Transactional
+
+}

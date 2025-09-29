@@ -1,0 +1,8 @@
+import axios from 'axios';
+const api = axios.create({ baseURL: 'http://localhost:8080' });
+export const listTasks = (params) => api.get('/api/tasks', { params });
+export const createTask = (task) => api.post('/api/tasks', task);
+export const getTask = (id) => api.get(`/api/tasks/${id}`);
+export const updateTask = (id, task) => api.put(`/api/tasks/${id}`, task);
+export const updateStatus = (id, status) => api.patch(/api/tasks/${id}/status, null, { params: { status } });
+export const deleteTask = (id) => api.delete(/api/tasks/${id});

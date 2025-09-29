@@ -1,0 +1,4 @@
+package Tracker.ProjectTracker.service;
+import Tracker.ProjectTracker.entity.Task;
+public interface TaskService {
+}

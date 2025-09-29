@@ -1,0 +1,4 @@
+package Tracker.ProjectTracker;
+
+public class GlobalExceptionHandler {
+}

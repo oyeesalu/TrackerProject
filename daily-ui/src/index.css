@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Google font import if already used elsewhere; safe to keep or remove */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
+
+/* Only add a reusable black button class — nothing else */
+@layer components {
+  .btn-black {
+    @apply inline-flex items-center justify-center rounded-md
+           bg-black text-white
+           hover:bg-neutral-900
+           focus:outline-none focus:ring-2 focus:ring-black
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-sm { @apply px-2.5 py-1 text-xs; }
+  .btn-md { @apply px-3 py-1.5 text-sm; }
+}
